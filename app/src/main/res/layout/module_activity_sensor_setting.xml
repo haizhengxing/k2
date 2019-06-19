@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/zsSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="转速来源:"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/obd_zs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD转速" />
+
+                <RadioButton
+                    android:id="@+id/mc_zs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="脉冲转速" />
+            </RadioGroup>
+
+
+
+            <RadioGroup
+                android:id="@+id/csSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="车速来源:"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/obd_cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD车速" />
+
+                <RadioButton
+                    android:id="@+id/gps_cs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS速度" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/dwSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="档位来源:"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/obd_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD档位" />
+
+                <RadioButton
+                    android:id="@+id/dwq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="档位器" />
+
+                <RadioButton
+                    android:id="@+id/cdb_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传动比档位" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/jdSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="角度来源:"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/fxp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方向盘" />
+
+                <RadioButton
+                    android:id="@+id/gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GPS" />
+
+                <RadioButton
+                    android:id="@+id/tly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="陀螺仪" />
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/sjSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="数据来源:"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/ck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="串口" />
+
+                <RadioButton
+                    android:id="@+id/wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WIFI" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+</LinearLayout>

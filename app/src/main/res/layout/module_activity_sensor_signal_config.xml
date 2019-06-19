@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="当前车型: "
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/tv_carType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知车型"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/skdGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="示宽灯" />
+
+                <RadioButton
+                    android:id="@+id/obdSkd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioSkd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/jgdGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="近光灯" />
+
+                <RadioButton
+                    android:id="@+id/obdJgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioJgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/ygdGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="远光灯" />
+
+                <RadioButton
+                    android:id="@+id/obdYgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioYgd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/yzxGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="右转向" />
+
+                <RadioButton
+                    android:id="@+id/obdYzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioYzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/zzxGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="左转向" />
+
+                <RadioButton
+                    android:id="@+id/obdZzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioZzx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/wdGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="雾    灯" />
+
+                <RadioButton
+                    android:id="@+id/obdWd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioWd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/lbGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="喇    叭" />
+
+                <RadioButton
+                    android:id="@+id/obdLb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioLb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/lhGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="离    合" />
+
+                <RadioButton
+                    android:id="@+id/obdLh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioLh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/jsGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="脚    刹" />
+
+                <RadioButton
+                    android:id="@+id/obdJs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioJs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/ssGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="手    刹" />
+
+                <RadioButton
+                    android:id="@+id/obdSs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioSs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/aqdGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="安全带" />
+
+                <RadioButton
+                    android:id="@+id/obdAqd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioAqd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/cmGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="车    门" />
+
+                <RadioButton
+                    android:id="@+id/obdCm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OBD" />
+
+                <RadioButton
+                    android:id="@+id/ioCm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IO" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+{
+  "fileName": "上车起步.json",
+  "id": "835a517f5bf747728c46018c4d215688",
+  "isShow": true,
+  "name": "上车起步",
+  "subItem": [
+    {
+      "alias": "未调整座椅",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "未调整座椅",
+      "id": "86b3beb6721d468bb2f46a1c24699438",
+      "score": 100
+    },
+    {
+      "alias": "未调整后视镜",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "未调整后视镜",
+      "id": "f4a5819032c74fdc86304c1cc8912448",
+      "score": 10
+    },
+    {
+      "alias": "未调整观望镜",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "未调整观望镜",
+      "id": "3881079f5ebf4cbf98d586f9514440de",
+      "score": 5
+    },
+    {
+      "alias": "上车前不绕车一周检查车辆外观及周围情况",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "上车前不绕车一周检查车辆外观及周围情况",
+      "id": "6d71aba6ad0c44fab765fcf98e63acf4",
+      "score": 100
+    },
+    {
+      "alias": "未关闭所有灯光",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "未关闭所有灯光",
+      "id": "214c33f0b17d4e4f9eb69496bdd56d08",
+      "score": 100
+    },
+    {
+      "alias": "开始考试前未拉紧驻车制动器",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "开始考试前未拉紧驻车制动器",
+      "id": "d06dae15e5f9456182afdeedf5665f8e",
+      "score": 100
+    },
+    {
+      "alias": "启动发动机后，不及时松开启动开关",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "启动发动机后，不及时松开启动开关",
+      "id": "4dab556f41d240c7bf31c4a22f9f5ffa",
+      "score": 100
+    },
+    {
+      "alias": "不松驻车制动器起步，但即时纠正",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "不松驻车制动器起步，但即时纠正",
+      "id": "7e6ee3261e3d4650a3722b8976d9c265",
+      "score": 10
+    },
+    {
+      "alias": "不松驻车制动器起步，未即时纠正",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "不松驻车制动器起步，未即时纠正",
+      "id": "721465fac4624d89a57f9ba4079a848a",
+      "score": 100
+    },
+    {
+      "alias": "起步未按喇叭",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "起步未按喇叭",
+      "id": "969e4667fe714c0698dc00c7a7ff9805",
+      "score": 5
+    },
+    {
+      "alias": "停车再起步未鸣喇叭",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "停车再起步未鸣喇叭",
+      "id": "3a6164a3028e45bf8ee826f6e857bc40",
+      "score": 5
+    },
+    {
+      "alias": "起步时转速过低",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "起步时转速过低",
+      "id": "453a84d51dbe493e8d44f5c75c42521d",
+      "score": 10
+    },
+    {
+      "alias": "起步时转速过高",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "起步时转速过高",
+      "id": "cb5156a78c12482b9e777131d2c0e644",
+      "score": 10
+    },
+    {
+      "alias": "起步未开转向灯",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "起步未开转向灯",
+      "id": "8527ebdb36ed450f866a223f5523af52",
+      "score": 100
+    },
+    {
+      "alias": "起步未完成时关闭转向灯",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "起步未完成时关闭转向灯",
+      "id": "e0e8f0c4147b485d81d3b383b6f8cbd5",
+      "score": 100
+    },
+    {
+      "alias": "起步打错转向灯",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "起步打错转向灯",
+      "id": "63b13de4d593436e9836266779ca60ec",
+      "score": 100
+    },
+    {
+      "alias": "车门未关闭起步",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "车门未关闭起步",
+      "id": "c383712898ea4f3893990b363274d9af",
+      "score": 100
+    },
+    {
+      "alias": "起步时车辆后溜，但是后溜距离小于30公分",
+      "artificialEvaluation": true,
+      "autoEvaluation": false,
+      "content": "起步时车辆后溜，但是后溜距离小于30公分",
+      "id": "4ca1fabff10d437b98606f9e161402e8",
+      "score": 10
+    },
+    {
+      "alias": "起步时车辆后溜，且后溜距离大于30公分",
+      "artificialEvaluation": true,
+      "autoEvaluation": false,
+      "content": "起步时车辆后溜，且后溜距离大于30公分",
+      "id": "0469201435a641ce8889c7fb6d3eb0e6",
+      "score": 10
+    },
+    {
+      "alias": "夜间考试起步时，未开启前照灯",
+      "artificialEvaluation": false,
+      "autoEvaluation": true,
+      "content": "夜间考试起步时，未开启前照灯",
+      "id": "46d230afc2c94bd1a8396a6fb0bca532",
+      "score": 100
+    },
+    {
+      "alias": "夜间考试起步时，未交替使用远近光灯",
+      "artificialEvaluation": false,
+      "autoEvaluation": false,
+      "content": "夜间考试起步时，未交替使用远近光灯",
+      "id": "8d30ca2eed7942eaa2bf123287df377c",
+      "score": 100
+    }
+  ]
+}

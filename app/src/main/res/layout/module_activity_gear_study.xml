@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="请点击学习按钮依次学习档位,学习完成之后才能正确识别汽车档位" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="把档位挂至需要学习的档位放开离合(踩下离合器即为空档),点击对应档位的学习按钮,将油门加至最大(大概3000-4000转)直到匀速前进,然后把车速降至最低(即将熄火状态)之后点击完成按钮即可学习完成"
+            android:textColor="@color/red" />
+
+
+        <com.hzx.k2.widget.GearStudyView
+            android:id="@+id/oneStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hzx.k2.widget.GearStudyView
+            android:id="@+id/twoStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hzx.k2.widget.GearStudyView
+            android:id="@+id/threeStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hzx.k2.widget.GearStudyView
+            android:id="@+id/fourStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hzx.k2.widget.GearStudyView
+            android:id="@+id/fiveStudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="当前传动比:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/curDriveRatio"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="当前档位:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/curGear"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+</LinearLayout>

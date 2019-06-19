@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/leftTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/titleView"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="12.5%" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleView"
+        android:layout_marginStart="1dp"
+        android:layout_toEndOf="@id/leftTitle"
+        android:background="@color/black" />
+
+    <FrameLayout
+        android:id="@+id/fragmentView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/titleView"
+        android:layout_toEndOf="@+id/leftTitle"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="87.5%" />
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

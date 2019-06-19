@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">19sp</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textViewStyle">@style/textViewStyle</item>
+        <item name="android:checkboxStyle">@style/checkBox</item>
+    </style>
+
+    <!--<item name="android:buttonStyle">@style/buttonStyle</item>-->
+
+    <style name="textViewStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingBottom">30dp</item>
+        <item name="android:animateOnClick">true</item>
+        <item name="android:drawable">@drawable/anim_signal</item>
+    </style>
+
+    <style name="checkBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box_selector</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+
+    <style name="editTextStyle">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:background">@drawable/edit_view_frame</item>
+    </style>
+
+</resources>
